@@ -1,0 +1,229 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #e4e4e4;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
+#defaultCanvas0 {
+  border-radius: 30px;
+}
+
+#canvas {
+  padding-right: 1rem;
+  min-width: 714px;
+}
+
+.wrapper {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  min-width: 1031.31px;
+  min-height: 427px;
+  box-sizing: border-box;
+}
+
+.scoreboard {
+  min-width: 200px;
+  padding-left: 1rem;
+  border-left: 1px solid #93a1ad;
+  color: #93a1ad;
+  font-family: "Avenir", sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #464e56;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+ol.leaders {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+ol.leaders li {
+  padding-bottom: 1rem;
+}
+
+ol.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . ";
+}
+ol.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+ol.leaders span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls__item {
+  display: inline-flex;
+  font-size: 12px;
+}
+
+.controls__item:first-child {
+    margin-bottom: 1rem;
+}
+
+.controls__item p {
+     margin: auto 0;
+}
+
+.controls__item img {
+  width: 130px;
+  padding-right: 15px;
+}
+
+.current-best {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
